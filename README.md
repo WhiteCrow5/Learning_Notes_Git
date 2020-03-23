@@ -1,3 +1,7 @@
+[TOC]
+
+
+
 #### 1、初始化仓库
 
 ```
@@ -86,5 +90,45 @@ git help <command>
 git diff <file>
 # 将工作区文件和本地库历史记录进行比较
 git diff HEAD <file>
+```
+
+#### 10、分支管理
+
+```
+# 查看分支
+git branch -v
+# 创建分支
+git branch [branchname]
+# 切换分支
+git checkout [branchname]
+# 合并分支
+gir merge [branchname]
+
+```
+
+#### 11、远程库
+
+```
+# 查看关联的远程库
+git remote -v
+# 远程添加库
+git remote add [远程库地址别名] [address]
+# 克隆远程库
+git clone [address]
+# 推送到远程库
+git push [远程库地址别名][远程分支名]
+# 拉取远程库
+git fetch [远程库地址别名][远程分支名]
+git merge [远程库地址别名][远程分支名]
+# pull = fetch + merge
+git pull [远程库地址别名][远程分支名]
+```
+
+
+
+#### 12、ssh设置
+
+```
+ssh-keygen -t rsa -C [email]
 ```
 
