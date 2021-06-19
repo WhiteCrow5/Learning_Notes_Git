@@ -275,3 +275,24 @@ git show v1.4							# 显示标签信息
 git tag -a v1.2 9fceb02					# 为指定提交添加标签
 ```
 
+
+
+### 2.22 rebase
+
+整个提交记录
+
+```shell
+git rebase -i oaa459	# 合并当前版本至oaa459版本
+git rebase -i HEAD~3	# 合并当前版本和前三个版本
+
+#　合并分支的分叉
+git checkout dev
+git rebase master
+git checkout master
+git merge dev
+
+# 合并远程仓库分支的分叉
+git fetch origin dev
+git rebase origin/dev
+```
+
