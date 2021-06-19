@@ -19,6 +19,8 @@
 git init
 ```
 
+
+
 #### 2、设置签名
 
 ```
@@ -30,11 +32,15 @@ git config --global user.name xxx
 git config --global user.email xxx@xx.com
 ```
 
+
+
 #### 3、查看状态
 
 ```
 git status
 ```
+
+
 
 #### 4、工作区到暂存区文件的添加与删除
 
@@ -49,6 +55,8 @@ git checkout -- <file>
 git restore <file>			#2.23版本新填的 switch 和 restore命令
 ```
 
+
+
 #### 5、提交暂存区文件到本地库
 
 ```
@@ -56,6 +64,8 @@ git commit <file>
 # （推荐）
 git commit -m 'message' <file>
 ```
+
+
 
 #### 6、查看日志
 
@@ -69,6 +79,8 @@ git log --pretty=oneline
 # 显示出HEAD指针需要移动的步数 （推荐）
 git reflog
 ```
+
+
 
 #### 7、版本切换
 
@@ -88,11 +100,15 @@ git reset --hard HEAD~n
 --hard	在本地库移动HEAD指针，重置暂存区，重置工作区（推荐）
 ```
 
+
+
 #### 8、查看帮助
 
 ```
 git help <command>
 ```
+
+
 
 #### 9、文件比较
 
@@ -102,6 +118,8 @@ git diff <file>
 # 将工作区文件和本地库历史记录进行比较
 git diff HEAD <file>
 ```
+
+
 
 #### 10、分支管理
 
@@ -116,6 +134,8 @@ git checkout [branchname]
 gir merge [branchname]
 
 ```
+
+
 
 #### 11、远程库
 
